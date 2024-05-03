@@ -1,47 +1,49 @@
-## Getting Started
+# Block-X Smart Contract
 
-Create a project using this example:
+The Block-X smart contract is the backbone of the Block-X decentralized application (dApp), built on the Binance Smart Chain network. This contract facilitates the posting, deletion, and tipping functionalities within the Block-X platform, allowing users to interact with each other in a decentralized manner.
 
-```bash
-npx thirdweb create --contract --template forge-starter
-```
+## Key Features:
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+1. **Bloc Posting**: Users can create and post blocs, akin to tweets on social media platforms, directly onto the blockchain. Each bloc is timestamped and permanently stored on the Binance Smart Chain, ensuring transparency and immutability.
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) to learn more.
+2. **Bloc Deletion**: Users have the ability to delete their own blocs, providing them with control over their content and privacy. Deleted blocs are removed from the platform, maintaining the integrity of the user experience.
 
-## Building the project
+3. **Wallet Tipping**: The contract enables users to tip each other using cryptocurrency directly from their wallets. This feature fosters engagement and appreciation within the community, allowing users to support content creators and contributors.
 
-After any changes to the contract, run:
+4. **Scalability**: Designed to handle a large number of users, the Block-X contract supports interactions from 250+ wallets, ensuring scalability without compromising performance or user experience.
 
-```bash
-npm run build
-# or
-yarn build
-```
+5. **Security**: The contract is built with security in mind, leveraging the robustness of the Binance Smart Chain network to safeguard user transactions and data.
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/thirdweb-deploy/contract-extensions) detected on your contract.
+## Technology Stack:
 
-## Deploying Contracts
+- **Solidity**: The contract is implemented using the Solidity programming language, specifically designed for writing smart contracts on Ethereum-compatible blockchains.
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
+- **Binance Smart Chain**: The contract operates on the Binance Smart Chain, a blockchain network optimized for fast and low-cost transactions.
 
-```bash
-npm run deploy
-# or
-yarn deploy
-```
+- **ThirdWeb Library**: Block-X utilizes the ThirdWeb library for enhanced functionality and ease of development. ThirdWeb simplifies smart contract deployment and interaction, making it easier for developers to build decentralized applications.
 
-## Releasing Contracts
+## Usage:
 
-If you want to release a version of your contracts publicly, you can use one of the followings command:
+The Block-X contract can be interacted with through the Block-X decentralized application (dApp), providing users with a seamless and intuitive platform to engage with the blockchain. Users can post, delete, and tip blocs directly through the dApp's user interface, with all interactions executed securely on the blockchain.
 
-```bash
-npm run release
-# or
-yarn release
-```
+## Deployment:
 
-## Join our Discord!
+To deploy the Block-X smart contract, follow these steps:
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+1. Install Node Modules:
+
+    `npm install`
+
+2. Install ThirdWeb library:
+
+    `npm install thirdweb`
+
+3. deploy the Block-X smart contract:
+
+    `thirdweb deploy`
+
+
+Once deployed, interact with your contract using ThirdWeb's Website.
+
+
+Feel free to adjust the instructions based on your actual deployment process and usage of the ThirdWeb library.
